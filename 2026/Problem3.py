@@ -1,13 +1,7 @@
-
 t = int(input("num of test cases: "))
 
-
-dict1 = {"N": 0, "S": 0, "E": 0, "W": 0 }
-
-print(dict1["NE"])
-
 for i in range(t):
-    a,b,c,d, dir1 = input("input: ").split()
+    a,b,x,y, dir1 = input("input: ").split()
     x = int(x) - int(a)
     y = int(y) - int(b)
     a = 0
