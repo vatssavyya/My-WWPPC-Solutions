@@ -1,7 +1,8 @@
-t = int(input("num of test cases: "))
+t = int(input())
+answers = []
 
 for i in range(t):
-    a,b,x,y, dir1 = input("input: ").split()
+    a,b,x,y, dir1 = input().split()
     x = int(x) - int(a)
     y = int(y) - int(b)
     a = 0
@@ -24,10 +25,14 @@ for i in range(t):
     elif dir1 == "SW":
         var1 = ((y <= 0) and (x <= 0))
     
+    
     if var1:
-        print("YES")
+        answers.append("YES")
     else:
-        print("NO")
+        answers.append("NO")
+
+for stringAnswer in answers:
+    print(stringAnswer)
         
 
 
