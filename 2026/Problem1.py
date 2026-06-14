@@ -1,2 +1,9 @@
-# set up for problem one, we haven't done anything YET....
+n = int(input())
+s = input().strip()
+
+SixCount = s.count('6')
+SevenCount = n - SixCount
+
+print('6' * SixCount + '7' * SevenCount)
+
 
