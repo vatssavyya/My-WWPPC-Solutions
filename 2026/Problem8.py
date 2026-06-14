@@ -2,7 +2,12 @@ t = int(input())
 
 for i in range(t):
     N, M, S = map(int, input().split())
-    bi = int(input())
+    bi = list(map(int, input().split()))
+    movement = []
 
-    movement = (bi/S)/(N+M)
+    for ii in range(M-1):
+        movement.append((1/(S + bi[ii]))*(bi[ii]/S))
     
+
+    
+
